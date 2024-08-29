@@ -6,10 +6,34 @@
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>CSS Selectors</title>
   <style>
-    
+    #primary-heading {
+      color: green;
+    }
+    .secondary-heading {
+      color: red;
+    }
+    /* # is for IDs */
+    #welcome {
+      background-color: #f4f4f4;
+    }
+
+    /* Multiple Selectors */
+    #welcome, #about {
+      border: 2px solid #ccc;
+      padding: 5px;
+      margin-bottom: 5px;
+
+    }
   </style>
 </head>
 <body>
-  
+  <div id="welcome">
+    <h2 id="primary-heading">Welcome</h2>
+    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Et fugiat eius assumenda corporis repellendus ipsum ea non aliquam eaque! Aut.</p>
+  </div>
+  <div id="about">
+    <h2 class="secondary-heading">About Us</h2>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Itaque in maxime commodi eaque distinctio tempore omnis pariatur repellat laudantium assumenda.</p>
+  </div>
 </body>
 </html>
